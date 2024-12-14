@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar 4</title>
+  <link rel="stylesheet" href="nav4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Company Logo">
+      <span>Company Logo</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Category</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+    <div class="icons">
+      <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+      <i class="fa-solid fa-bag-shopping"></i>
+      <i class="fa-regular fa-user"></i>
+    </div>
+  </nav>
+  <div class="search-bar" id="searchBar">
+    <input type="text" placeholder="Search Product">
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+
+  <script>
+    document.getElementById('searchIcon').addEventListener('click', () => {
+  const searchBar = document.getElementById('searchBar');
+  const searchIcon = document.getElementById('searchIcon');
+
+  //  search bar 
+  searchBar.classList.toggle('active');
+
+  // search icon 
+  if (searchBar.classList.contains('active')) {
+    searchIcon.classList.remove('fa-magnifying-glass');
+    searchIcon.classList.add('fa-times');
+  } else {
+    searchIcon.classList.remove('fa-times');
+    searchIcon.classList.add('fa-magnifying-glass');
+  }
+});
+
+  </script>
+</body>
+</html>
