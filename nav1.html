@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar 1</title>
+  <link rel="stylesheet" href="nav1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Company Logo" class="logo-image">
+      <span>Company Logo</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">About us</a></li>
+      <li class="menu-item">
+        <a href="#">More</a>
+        <i class="fa-sharp fa-solid fa-angle-down"></i>
+        <div class="dropdown">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+        </div>
+      </li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Product">
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <div class="icons">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
+        <i class="fa-solid fa-van-shuttle"></i>
+        <i class="fa-regular fa-user"></i>
+    </div>
+  </nav>
+</body>
+</html>
